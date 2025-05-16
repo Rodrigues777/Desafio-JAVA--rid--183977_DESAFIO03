@@ -5,7 +5,7 @@ Este projeto é um **gerenciador de tarefas responsivo e interativo**, desenvolv
 ## 📸 Preview
 
 ### 💻 Desktop
-![Preview Desktop]([[./img/preview-desktop.png](https://boarddetarefasdncrid183977.netlify.app/)](https://boarddetarefasdncrid183977.netlify.app))
+![Preview Desktop] https://boarddetarefasdncrid183977.netlify.app
 
 
 
