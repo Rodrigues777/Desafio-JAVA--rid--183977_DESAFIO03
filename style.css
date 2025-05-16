@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Rubik', sans-serif;
+}
+
+body {
+  background-color: #f8f9fd;
+  padding: 2rem;
+}
+
+.container {
+  max-width: 720px;
+  background-color: white;
+  padding: 2rem;
+  border-radius: 16px;
+  margin: auto;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+h1 {
+  color: #1b1c57;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+/* Formulário */
+form {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+form input {
+  flex: 1;
+  padding: 0.8rem;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+form button {
+  background-color: #2f80ed;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  padding: 0.8rem 1.2rem;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #1c60c6;
+}
+
+/* Tarefas */
+#lista-tarefas {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.tarefa {
+  background-color: white;
+  padding: 1rem;
+  border: 1px solid #e5e5e5;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.titulo {
+  font-weight: bold;
+  color: #1b1c57;
+}
+
+.etiqueta-data {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  font-size: 0.85rem;
+}
+
+.etiqueta {
+  background-color: #f0f0f0;
+  padding: 0.3rem 0.6rem;
+  border-radius: 8px;
+  color: #555;
+}
+
+.data {
+  color: #888;
+}
+
+.btn-tarefa {
+  align-self: flex-end;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 10px;
+  background-color: #2f80ed;
+  color: white;
+  cursor: pointer;
+}
+
+.btn-tarefa:hover {
+  background-color: #1c60c6;
+}
+.tarefa-concluida .titulo {
+  text-decoration: line-through;
+  color: #b2b2b2;
+}
+
+.tarefa-concluida {
+  opacity: 0.8;
+}
+
+
+.tarefa-concluida .btn-tarefa {
+  background-color: #00c897;
+  content: "✔️";
+  font-size: 1.3rem;
+}
+.tarefa-concluida .btn-tarefa::before {
+  content: "✔️";
+  color: white;
+}
+
+.tarefa-concluida .btn-tarefa {
+  padding: 0.6rem;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 0;
+}
+.btn-check {
+  background-color: transparent;
+  background-image: url("img/check.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  border: none;
+  width: 33px;
+  height: 33px;
+  padding: 0;
+}
+
